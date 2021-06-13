@@ -43,4 +43,31 @@ function average(a, b) {
     return (a + b) / 2;
 }
 
-console.log(average(1,2), average(38, 6775));
+// console.log(average(1,2), average(38, 6775));
+
+var array = [165, 573,4564, 46754, 4564];
+
+for(var i =0;i<array.length;i++){
+    console.log(array[i]);
+    array.push("test");
+    array.pop();
+  
+}
+
+array.forEach(element => {
+    // console.log(element);
+});
+
+//let is better for memory management
+
+let j =0;
+// while(j<array.length){
+//     console.log(array[j]);
+//     j++;
+// }
+
+// do{
+//     console.log(array[j])
+//     j++
+// }while(j < array.length)
+
