@@ -71,3 +71,10 @@ let j =0;
 //     j++
 // }while(j < array.length)
 
+//DOM manipulation
+
+let doc = document.getElementById("click")
+
+//doc.style.background = "yellow"
+let className = doc.getElementsByClassName("myClass");
+doc.classList.add("myClass");
