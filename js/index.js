@@ -48,7 +48,7 @@ function average(a, b) {
 var array = [165, 573,4564, 46754, 4564];
 
 for(var i =0;i<array.length;i++){
-    console.log(array[i]);
+    //console.log(array[i]);
     array.push("test");
     array.pop();
   
@@ -71,3 +71,42 @@ let j =0;
 //     j++
 // }while(j < array.length)
 
+
+//DOM manipulation
+
+let doc = document.getElementById("click")
+
+//doc.style.background = "yellow"
+let className = document.getElementsByClassName("container");
+className[0].style.background = "yellow";
+
+//Below code is a way to add css class
+doc.classList.add("myClass");
+
+//Below code is to get inner HTML
+//console.log(className[0].innerHTML);
+
+//This is how we can create an element and append in container 
+createdElement = document.createElement('p');
+createdElement.innerText = "This is a paragraph";
+className[0].appendChild(createdElement);
+
+//Here We can also use replaceChild(firstElement, secondElement) or removeChild(element)
+function submit(){
+    //alert('This is button click');
+}
+
+window.onload = function(){
+    //Do Something 
+}
+
+//Click event 
+let button = document.getElementById("second-button");
+//Below click is an event we can also use mouseover or mouseup instead
+button.addEventListener('click', ()=>{
+    button.textContent = "This is new content";
+  // console.log("Clicked");
+   
+})
+
+document.getElementsByClassName("container1")[0].innerHTML = "<p> This </p>";
