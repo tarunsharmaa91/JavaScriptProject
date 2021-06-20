@@ -110,3 +110,32 @@ button.addEventListener('click', ()=>{
 })
 
 document.getElementsByClassName("container1")[0].innerHTML = "<p> This </p>";
+
+//Call same method after certain interval
+sum = () =>
+{
+    console.log("test");
+}
+//setInterval(sum, 1000);
+
+//Local Storage
+localStorage.setItem('name', 'tarun');
+//console.log(localStorage.getItem('name'));
+//localStorage.getItem('name');
+
+//To clear
+//localStorage.clear()
+
+//Json
+
+object = {"name": "Tarun", "age": 29}
+//console.log(object);
+//You can check type by typing typeof + name
+
+stringValue = JSON.stringify(object);
+console.log(stringValue);
+
+parse = JSON.parse(stringValue);
+console.log(parse);
+
+console.log(parse.age)
